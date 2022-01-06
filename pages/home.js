@@ -109,7 +109,7 @@ function Home() {
                         style={styles.carouselItem}
                         source={item.src}
                     />
-                    <Text style={styles.carouselCity}>{item.name}</Text>
+                    <Text style={styles.city}>{item.name}</Text>
                 </View>
             </>
         );
@@ -127,6 +127,7 @@ function Home() {
                     love their cities!
                 </Text>
                 <Button
+                    style={styles.button}
                     title="Choose your dream destination!"
                     color="#c26700"
                     accessibilityLabel="Learn more about this purple button"
@@ -150,20 +151,16 @@ function Home() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#f5b30dcb",
+        backgroundColor: "#ff9946",
         alignItems: "center",
-        justifyContent: "center",
-        fontSize: 20,
+        justifyContent: "center", 
         shadowColor: "#000",
         height: 60,
         shadowOffset: {
             width: 1,
             height: 5,
         },
-        shadowOpacity: 0.34,
-        shadowRadius: 6.27,
-
-        elevation: 10,
+       
     },
     image: {
         flex: 1,
@@ -173,11 +170,18 @@ const styles = StyleSheet.create({
         width: "100%",
         height: "70%",
     },
+    city:{
+        fontSize: 25,
+        color: "#000",
+    },
     Text: {
         fontSize: 40,
         color: "#fae0af",
         margin:"24%",
 
+    },
+    button:{
+        fontSize: 20,
     },
     subtitle: {
         fontSize: 20,
@@ -185,10 +189,6 @@ const styles = StyleSheet.create({
         flex:1,
         justifyContent: "center",
     },
-    carouselCity:{
-        fontSize: 100,
-        color: "#fae0af",
-    }
 });
 
 export default Home;
