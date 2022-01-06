@@ -1,20 +1,16 @@
 const initialState = {
-    state: [],
-    activities: {},
-
+    state:[],
+    activities:[]
 }
 
 const activitiesReducer = (state = initialState, action) => {
-    switch (action.type) {
+    switch (action.type) {  
         case 'GET_ACTIVITIES':
-            return {
+            return{
                 ...state,
                 activities: action.payload
             }
-
-        default: return state
-
-
+            default: return state
     }
 }
 
