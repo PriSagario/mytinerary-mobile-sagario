@@ -109,7 +109,7 @@ function Home() {
                         style={styles.carouselItem}
                         source={item.src}
                     />
-                    <Text style={styles.carouselText}>{item.name}</Text>
+                    <Text style={styles.carouselCity}>{item.name}</Text>
                 </View>
             </>
         );
@@ -184,6 +184,10 @@ const styles = StyleSheet.create({
         fontStyle: "normal", 
         flex:1,
         justifyContent: "center",
+    },
+    carouselCity:{
+        fontSize: 100,
+        color: "#fae0af",
     }
 });
 
